@@ -4,7 +4,7 @@ StatsCraft is a simple bukkit plugin that shows some useful info like tps, free 
 
 ## Download
 
-go to releases.
+Go to releases.
 
 ## License
 
