@@ -1,0 +1,12 @@
+name: StatsCraft
+version: 1.0.0
+main: tk.snr1s.statscraft.Main
+author: snr1s_
+commands:
+  statscraft:
+    usage: /statscraft
+    description: Shows stats.
+permissions:
+  statscraft.showstats:
+    default: op
+    description: Permission to use statscraft command.
