@@ -1,4 +1,4 @@
-package tk.snr1s.statscraft;
+package tk.snr1s.statscraft.util;
 
 import java.io.File;
 import org.apache.commons.io.FileUtils;

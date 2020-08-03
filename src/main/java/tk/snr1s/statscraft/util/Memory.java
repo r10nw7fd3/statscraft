@@ -1,4 +1,4 @@
-package tk.snr1s.statscraft;
+package tk.snr1s.statscraft.util;
 
 public class Memory {
     public static String getFreeMemory() {

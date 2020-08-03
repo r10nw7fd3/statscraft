@@ -1,6 +1,7 @@
 package tk.snr1s.statscraft;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import tk.snr1s.statscraft.util.TPS;
 
 
 public class Main extends JavaPlugin {

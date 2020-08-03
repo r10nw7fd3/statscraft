@@ -1,15 +1,16 @@
 package tk.snr1s.statscraft;
 
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import static tk.snr1s.statscraft.CoreVersion.getCoreVersion;
-import static tk.snr1s.statscraft.Disk.getServerSize;
-import static tk.snr1s.statscraft.Memory.getFreeMemory;
-import static tk.snr1s.statscraft.TPS.getTPS;
-import static tk.snr1s.statscraft.Uptime.getUptime;
+import static tk.snr1s.statscraft.util.CoreVersion.getCoreVersion;
+import static tk.snr1s.statscraft.util.Disk.getServerSize;
+import static tk.snr1s.statscraft.util.Memory.getFreeMemory;
+import static tk.snr1s.statscraft.Messages.formatSN;
+import static tk.snr1s.statscraft.util.Players.getPlayers;
+import static tk.snr1s.statscraft.util.TPS.getTPS;
+import static tk.snr1s.statscraft.util.Uptime.getUptime;
 
 public class Cmd implements CommandExecutor {
 
@@ -21,11 +22,12 @@ public class Cmd implements CommandExecutor {
                 return true;
             }
             sender.sendMessage(Messages.LINE);
-            sender.sendMessage(Messages.PREFIX+ChatColor.GREEN+"TPS"+ChatColor.GRAY+" - "+ChatColor.YELLOW+getTPS());
-            sender.sendMessage(Messages.PREFIX+ChatColor.GREEN+"Core version"+ChatColor.GRAY+" - "+ChatColor.YELLOW+getCoreVersion());
-            sender.sendMessage(Messages.PREFIX+ChatColor.GREEN+"Uptime"+ChatColor.GRAY+" - "+ChatColor.YELLOW+getUptime());
-            sender.sendMessage(Messages.PREFIX+ChatColor.GREEN+"Free memory"+ChatColor.GRAY+" - "+ChatColor.YELLOW+getFreeMemory());
-            sender.sendMessage(Messages.PREFIX+ChatColor.GREEN+"Disk space used by server"+ChatColor.GRAY+" - "+ChatColor.YELLOW+getServerSize());
+            sender.sendMessage(formatSN("TPS")+getTPS());
+            sender.sendMessage(formatSN("Core version")+getCoreVersion());
+            sender.sendMessage(formatSN("Uptime")+getUptime());
+            sender.sendMessage(formatSN("Free memory")+getFreeMemory());
+            sender.sendMessage(formatSN("Disk space used")+getServerSize());
+            sender.sendMessage(formatSN("Players")+getPlayers());
             sender.sendMessage(Messages.LINE);
         }
         return true;
