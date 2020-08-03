@@ -4,11 +4,13 @@ StatsCraft is a simple bukkit plugin that shows some useful info like tps, free 
 
 ## Download
 
-Go to [releases](https://github.com/snr1s/statscraft/releases/tag/v1.0.0)
+Go to [releases](https://github.com/snr1s/statscraft/releases/tag/v1.0.2)
+
+Or click [here](https://github.com/snr1s/statscraft/releases/download/v1.0.2/statscraft-1.0.2.jar)
 
 ## Building
 
-Open terminal in the project's root, run:
+Open terminal in the project's root, run
 
 ```
 ./gradlew build
