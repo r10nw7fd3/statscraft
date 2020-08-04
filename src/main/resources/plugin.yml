@@ -7,6 +7,6 @@ commands:
     usage: /statscraft
     description: Shows stats.
 permissions:
-  statscraft.showstats:
+  statscraft.use:
     default: op
-    description: Permission to use statscraft command.
+    description: Permission to use this plugin.
