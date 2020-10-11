@@ -1,0 +1,13 @@
+# Global | Global configuration
+
+# Enabled?
+enabled: true
+
+
+# AutoClearItems | Automatically removes dropped items after a few time
+
+# Enabled?
+autoclearitems-enabled: true
+
+# Dropped item lifetime
+autoclearitems-itemlifetime-ticks: 60

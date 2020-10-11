@@ -8,5 +8,5 @@ public class Messages {
     public static final String CLEREMOVED = ChatColor.BLUE+"All entities have been removed.";
     public static final String NOTAPLAYERERR = ChatColor.RED+"Only players can do this!";
 
-    public static String formatSN(String statName) { return ChatColor.BLUE+statName+ChatColor.WHITE+" > "+ChatColor.BLUE; }
+    public static String formatSN(String statName) { return ChatColor.BLUE+statName+ChatColor.WHITE+" > "+ChatColor.GRAY; }
 }
